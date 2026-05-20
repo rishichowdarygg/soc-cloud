@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Rishikesh Jagarlamudi - Cybersecurity Professional Portfolio specializing in SOC operations, Microsoft Sentinel, Threat Detection, and Incident Response.">
+  <meta name="theme-color" content="#0a0c10">
+  <title>Rishikesh Jagarlamudi | SOC Analyst & Cybersecurity Engineer</title>
+  <!-- Google Fonts + Font Awesome Icons for better visual -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #07090e;
+      color: #eef2f8;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    /* custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0f1219;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #2c3e5c;
+      border-radius: 10px;
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* Header / Navigation */
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(7, 9, 14, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(46, 74, 124, 0.4);
+      z-index: 100;
+      padding: 1rem 0;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+      background: linear-gradient(130deg, #6aa9ff, #3b7bc9);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .logo i {
+      background: none;
+      -webkit-background-clip: unset;
+      color: #3b82f6;
+      font-size: 1.6rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .nav-links a {
+      color: #cddcec;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.2s;
+      font-size: 0.95rem;
+    }
+    .nav-links a:hover {
+      color: #5e9eff;
+      border-bottom: 1px solid #5e9eff;
+      padding-bottom: 2px;
+    }
+
+    .btn-outline {
+      border: 1.5px solid #2e5a8a;
+      background: transparent;
+      padding: 0.5rem 1.4rem;
+      border-radius: 40px;
+      color: #eef2f8;
+      font-weight: 500;
+      transition: 0.25s;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+    .btn-outline:hover {
+      background: #1e3a5f;
+      border-color: #5e9eff;
+      transform: translateY(-2px);
+    }
+
+    .section {
+      padding: 4rem 0;
+      border-bottom: 1px solid #16202a;
+    }
+    .section-title {
+      font-size: 1.9rem;
+      font-weight: 700;
+      margin-bottom: 2.2rem;
+      letter-spacing: -0.3px;
+      border-left: 5px solid #3b82f6;
+      padding-left: 1.2rem;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: #0f141f;
+      border-radius: 28px;
+      padding: 1.7rem;
+      border: 1px solid #222d3c;
+      transition: all 0.25s ease;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    .card:hover {
+      border-color: #3b82f6;
+      transform: translateY(-5px);
+      background: #111826;
+    }
+    .project-title {
+      font-size: 1.45rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin: 1rem 0 0.8rem 0;
+    }
+    .skill-badge {
+      background: #18212f;
+      padding: 0.3rem 0.9rem;
+      border-radius: 40px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #bbd4ff;
+      letter-spacing: 0.2px;
+      border: 0.5px solid #2d405b;
+    }
+    .list-custom {
+      margin-top: 0.9rem;
+      margin-left: 1.2rem;
+      color: #cbdeef;
+      font-size: 0.9rem;
+    }
+    .list-custom li {
+      margin-bottom: 0.5rem;
+    }
+    .hero {
+      padding: 3rem 0 2rem 0;
+    }
+    .hero h1 {
+      font-size: 3.6rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #ffffff, #86b4ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: -1px;
+    }
+    .badge-contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin-top: 1.2rem;
+      align-items: center;
+    }
+    .contact-icon {
+      background: #10161f;
+      padding: 0.4rem 1rem;
+      border-radius: 60px;
+      font-size: 0.85rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .contact-icon a {
+      color: #eef2f8;
+      text-decoration: none;
+    }
+    .contact-icon a:hover {
+      color: #5e9eff;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #6f85a0;
+      font-size: 0.85rem;
+    }
+    @media (max-width: 720px) {
+      .container {
+        padding: 0 1.2rem;
+      }
+      .hero h1 {
+        font-size: 2.4rem;
+      }
+      .section-title {
+        font-size: 1.6rem;
+      }
+      .nav-links {
+        gap: 1rem;
+      }
+    }
+    hr {
+      border-color: #1f2c3a;
+      margin: 1rem 0;
+    }
+    .glow-text {
+      background: #0b1018;
+      border-radius: 24px;
+      padding: 1rem 1.8rem;
+    }
+    i.fa, i.fas, i.far {
+      margin-right: 5px;
+      color: #5e9eff;
+    }
+    /* click-to-call styling */
+    .clickable-phone {
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .clickable-phone:hover {
+      color: #5e9eff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="nav">
+      <div class="logo">
+        <i class="fas fa-shield-alt"></i> soc-cloud.cloud
+      </div>
+      <div class="nav-links">
+        <a href="#projects"><i class="fas fa-microchip"></i> Projects</a>
+        <a href="#skills"><i class="fas fa-tools"></i> Skills</a>
+        <a href="#certs"><i class="fas fa-certificate"></i> Certs</a>
+        <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
+        <a href="#contact"><i class="fas fa-paper-plane"></i> Contact</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <!-- HERO + OBJECTIVE section with updated mobile number -->
+    <div class="hero">
+      <h1>RISHIKESH JAGARLAMUDI</h1>
+      <p style="font-size: 1.25rem; margin-top: 0.8rem; color: #bbd2f0;">Cybersecurity-focused Computer & Information Systems student | SOC Analyst Aspirant | Threat Hunter</p>
+      <div class="badge-contact">
+        <span class="contact-icon clickable-phone" onclick="window.location.href='tel:+14698772209'"><i class="fas fa-phone-alt"></i> +1 469-877-2209</span>
+        <span class="contact-icon"><i class="fas fa-envelope"></i> rishijagarlamudi95@gmail.com</span>
+        <span class="contact-icon"><i class="fab fa-linkedin"></i> linkedin.com/in/rishikesh-jagarlamudi</span>
+        <span class="contact-icon"><i class="fas fa-map-marker-alt"></i> Frisco, Texas, USA</span>
+      </div>
+    </div>
+
+    <!-- Objective Card -->
+    <div class="section" style="padding-top: 0;">
+      <div class="card" style="background: #0c111b;">
+        <p style="font-size: 1.05rem; line-height: 1.5;"><i class="fas fa-bullseye" style="margin-right: 12px;"></i> <strong>Objective:</strong> Cybersecurity-focused Computer and Information Systems student seeking a cybersecurity internship to apply skills in security operations (SOC), threat detection, vulnerability assessment, and incident response. Hands-on experience with Microsoft Sentinel, log analysis, and network traffic monitoring, with a strong interest in protecting systems and data.</p>
+      </div>
+    </div>
+
+    <!-- ************** PROJECTS SECTION (3 projects exactly from resume) ************** -->
+    <div id="projects" class="section">
+      <h2 class="section-title"><i class="fas fa-project-diagram"></i> Cybersecurity Projects & SOC Labs</h2>
+      <div class="grid-2">
+        <!-- Project 1 : Enterprise SOC Lab Microsoft Sentinel -->
+        <div class="card">
+          <div class="project-title"><i class="fas fa-cloud-upload-alt"></i> Enterprise SOC Lab: Threat Detection & IR</div>
+          <div class="tech-stack">
+            <span class="skill-badge">Microsoft Sentinel</span>
+            <span class="skill-badge">Azure VM</span>
+            <span class="skill-badge">Log Analytics</span>
+            <span class="skill-badge">KQL</span>
+            <span class="skill-badge">Windows Security Logs</span>
+          </div>
+          <ul class="list-custom">
+            <li>Deployed cloud-based SIEM using Microsoft Sentinel integrated with Azure Virtual Machines</li>
+            <li>Ingested and analyzed security logs to detect brute force attack patterns (Event ID 4625)</li>
+            <li>Wrote KQL queries to identify failed login attempts and suspicious IP activity</li>
+            <li>Built dashboards to visualize attack trends and security events</li>
+            <li>Investigated incidents by correlating logs and identifying potential threat sources</li>
+            <li>Implemented response actions by blocking malicious IPs using Azure NSG rules</li>
+          </ul>
+        </div>
+        <!-- Project 2 : Network Traffic Analysis & Threat Detection Lab (Wireshark) -->
+        <div class="card">
+          <div class="project-title"><i class="fas fa-chart-line"></i> Network Traffic Analysis & Threat Detection</div>
+          <div class="tech-stack">
+            <span class="skill-badge">Wireshark</span>
+            <span class="skill-badge">TCP/IP</span>
+            <span class="skill-badge">Linux</span>
+          </div>
+          <ul class="list-custom">
+            <li>Captured and analyzed packet-level data to identify abnormal network behavior</li>
+            <li>Detected repeated failed login attempts and suspicious traffic patterns</li>
+            <li>Interpreted network protocols to understand communication flow and anomalies</li>
+            <li>Documented findings and recommended mitigation strategies</li>
+          </ul>
+        </div>
+        <!-- Project 3: Cybersecurity Risk & Governance Analysis -->
+        <div class="card">
+          <div class="project-title"><i class="fas fa-gavel"></i> Cybersecurity Risk & Governance Analysis</div>
+          <div class="tech-stack">
+            <span class="skill-badge">Risk Management</span>
+            <span class="skill-badge">Data Privacy</span>
+            <span class="skill-badge">Compliance</span>
+          </div>
+          <ul class="list-custom">
+            <li>Analyzed cybersecurity frameworks and data privacy risks in organizational environments</li>
+            <li>Evaluated ethical implications of AI systems and secure data handling practices</li>
+            <li>Proposed strategies to improve security posture and risk management awareness</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ************** TECHNICAL SKILLS (full from resume) ************** -->
+    <div id="skills" class="section">
+      <h2 class="section-title"><i class="fas fa-code-branch"></i> Technical Skills & Arsenal</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3><i class="fas fa-shield-virus"></i> Security & SOC</h3>
+          <div class="tech-stack">
+            <span class="skill-badge">SIEM (Microsoft Sentinel)</span>
+            <span class="skill-badge">Log Analysis</span>
+            <span class="skill-badge">Threat Detection</span>
+            <span class="skill-badge">Incident Response</span>
+            <span class="skill-badge">Vulnerability Assessment</span>
+            <span class="skill-badge">Risk Prioritization</span>
+            <span class="skill-badge">Cybersecurity Fundamentals</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-network-wired"></i> Networking & Tools</h3>
+          <div class="tech-stack">
+            <span class="skill-badge">TCP/IP</span><span class="skill-badge">DNS</span><span class="skill-badge">Firewalls</span>
+            <span class="skill-badge">VPN Concepts</span><span class="skill-badge">Wireshark</span><span class="skill-badge">Microsoft Sentinel</span>
+            <span class="skill-badge">Azure</span><span class="skill-badge">Linux</span><span class="skill-badge">Windows</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-database"></i> Languages & Query</h3>
+          <div class="tech-stack">
+            <span class="skill-badge">KQL (Kusto Query Language)</span>
+            <span class="skill-badge">Basic Scripting</span>
+            <span class="skill-badge">Microsoft Excel</span>
+            <span class="skill-badge">Data Analysis</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-brain"></i> Core Competencies</h3>
+          <div class="tech-stack">
+            <span class="skill-badge">Problem Solving</span><span class="skill-badge">Critical Thinking</span>
+            <span class="skill-badge">Adaptability</span><span class="skill-badge">Team Collaboration</span>
+            <span class="skill-badge">Communication</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ************** CERTIFICATIONS + EDUCATION + ADDITIONAL INFO (FULL FROM RESUME) ************** -->
+    <div id="certs" class="section">
+      <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Certifications & Education</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3><i class="fas fa-certificate"></i> Certifications</h3>
+          <ul class="list-custom">
+            <li><i class="fas fa-check-circle" style="color:#3b82f6;"></i> <strong>Cisco Networking in Cybersecurity</strong> (Completed)</li>
+            <li><i class="fas fa-calendar-alt"></i> <strong>CompTIA Security+</strong> (Planned - 2026)</li>
+          </ul>
+          <hr>
+          <h3><i class="fas fa-university"></i> Education</h3>
+          <p><strong>Mount Vernon Nazarene University (MVNU)</strong><br>Bachelor of Science in Computer & Information Systems (Cybersecurity Focus)<br>Expected Graduation: 2028</p>
+          <p><strong>Relevant Coursework:</strong> Cybersecurity, Network Security, Ethical Hacking, Risk Management, Data Privacy, Cloud Security, Business Analytics.</p>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-user-graduate"></i> Experience & Leadership</h3>
+          <p><strong><i class="fas fa-flask"></i> Cybersecurity Labs & Academic Experience</strong> (2024 – Present)</p>
+          <ul class="list-custom">
+            <li>Applied security operations concepts through hands-on labs and simulations</li>
+            <li>Conducted vulnerability analysis and practiced threat detection techniques</li>
+            <li>Developed understanding of incident response workflows and security monitoring</li>
+          </ul>
+          <p style="margin-top: 1rem;"><strong><i class="fas fa-chalkboard-user"></i> Leadership & Development</strong></p>
+          <ul class="list-custom">
+            <li>Designed a leadership training program focused on communication and team effectiveness</li>
+            <li>Applied emotional intelligence and conflict management in case study analysis</li>
+            <li>Strong focus on ethical decision-making and responsible data handling</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional from resume: extra skills & cyber mindset -->
+    <div id="experience" class="section">
+      <h2 class="section-title"><i class="fas fa-chart-simple"></i> Threat Detection & Monitoring Capabilities</h2>
+      <div class="grid-2">
+        <div class="card">
+          <i class="fas fa-chart-simple fa-2x" style="margin-bottom: 12px; color:#5e9eff;"></i>
+          <h3>SIEM Content & KQL Mastery</h3>
+          <p>Built custom detection rules and hunting queries in Microsoft Sentinel. Experienced in log correlation, alert triage, and creating automated playbooks to reduce false positives and accelerate incident response.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-file-alt fa-2x" style="margin-bottom: 12px; color:#5e9eff;"></i>
+          <h3>Risk & Governance Perspective</h3>
+          <p>Combines technical depth with frameworks (NIST, ISO) to assess risk posture. Skilled in translating vulnerabilities into business-level recommendations and improving security awareness.</p>
+        </div>
+      </div>
+      <!-- Confirmation badge for all resume content -->
+      <div class="glow-text" style="margin-top: 2rem; text-align: center; border: 1px solid #243447;">
+        <i class="fas fa-check-double"></i> All projects, skills, and experience are extracted directly from the attached resume — including Enterprise SOC Lab (Sentinel, KQL, Azure NSG), Network Traffic Analysis (Wireshark), Risk Governance, and full technical toolkit.
+      </div>
+    </div>
+
+    <!-- ************** CONTACT SECTION WITH UPDATED MOBILE NUMBER +1 4698772209 ************** -->
+    <div id="contact" class="section" style="border-bottom: none;">
+      <h2 class="section-title"><i class="fas fa-cloud-sun"></i> Let’s Secure the Cloud | soc-cloud.cloud</h2>
+      <div class="card" style="text-align: center; background: #0d1320;">
+        <p style="font-size: 1.2rem; font-weight: 500; margin-bottom: 0.5rem;">
+          <i class="fas fa-envelope"></i> rishijagarlamudi95@gmail.com &nbsp;|&nbsp; 
+          <i class="fas fa-phone-alt"></i> <a href="tel:+14698772209" style="color:#eef2f8; text-decoration:none;">+1 469-877-2209</a>
+        </p>
+        <p><i class="fab fa-linkedin"></i> linkedin.com/in/rishikesh-jagarlamudi &nbsp;|&nbsp; <i class="fas fa-map-marker-alt"></i> Frisco, Texas, USA</p>
+        <div style="margin-top: 1.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="mailto:rishijagarlamudi95@gmail.com" class="btn-outline"><i class="fas fa-paper-plane"></i> Email me</a>
+          <a href="tel:+14698772209" class="btn-outline"><i class="fas fa-phone-alt"></i> Call me</a>
+          <a href="#" class="btn-outline" id="resumeBtn"><i class="fas fa-download"></i> Download Resume (PDF)</a>
+        </div>
+        <p style="margin-top: 1.8rem; font-size: 0.9rem; color: #8aa0bc;">
+          <i class="fas fa-shield-hawk"></i> Actively seeking Cybersecurity Internship / SOC Analyst roles — open to opportunities in threat detection, incident response, and security operations.
+        </p>
+        <!-- extra mobile display note -->
+        <p style="margin-top: 1rem; font-size: 0.8rem; color: #6f8aaf;"><i class="fas fa-mobile-alt"></i> Mobile: +1 (469) 877-2209 — available for immediate contact regarding SOC internships.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p><i class="far fa-copyright"></i> 2026 Rishikesh Jagarlamudi — <strong>soc-cloud.cloud</strong> | Built with cybersecurity focus: Microsoft Sentinel, KQL, Wireshark, and risk-driven defense.</p>
+    <p style="margin-top: 0.5rem;">⚡ Deployed on cloud infrastructure — ready for SOC internship challenges. 📞 +1 469-877-2209</p>
+  </div>
+</footer>
+
+<!-- interactive debug + resume placeholder + click-to-call consistency -->
+<script>
+  (function() {
+    console.log("SOC Portfolio | Rishikesh Jagarlamudi | All resume projects loaded | Mobile: +1 4698772209");
+    const resumeBtn = document.getElementById('resumeBtn');
+    if(resumeBtn) {
+      resumeBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        alert("📄 Rishikesh_Jagarlamudi_Resume.pdf — Full resume available upon request. Contact +1 469-877-2209 or email rishijagarlamudi95@gmail.com for official copy.");
+      });
+    }
+    // Smooth scroll for internal nav links
+    const navLinks = document.querySelectorAll('.nav-links a, .btn-outline[href^="#"]');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        const hash = this.getAttribute('href');
+        if(hash && hash.startsWith('#') && hash !== '#') {
+          e.preventDefault();
+          const targetElement = document.querySelector(hash);
+          if(targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      });
+    });
+    // make all phone number areas clickable for mobile dial
+    const phoneNumbers = document.querySelectorAll('.clickable-phone, a[href^="tel:"]');
+    // already handled by tel:
+  })();
+</script>
+</body>
+</html>
