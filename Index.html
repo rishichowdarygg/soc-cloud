@@ -176,11 +176,13 @@
     }
     .skill-badge:hover { background: rgba(59, 130, 246, 0.4); }
     .list-custom { margin-top: 0.9rem; margin-left: 1.2rem; }
+    .list-custom li { margin-bottom: 0.5rem; }
     .badge-contact { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin: 1.5rem 0; }
     .contact-icon { background: rgba(15, 23, 42, 0.7); padding: 0.5rem 1.2rem; border-radius: 60px; backdrop-filter: blur(4px); }
     footer { text-align: center; padding: 2rem; color: #6f85a0; }
     @media (max-width: 720px) { .hero-content h1 { font-size: 2.2rem; } .container { padding: 0 1.2rem; } }
     .btn-primary { background: linear-gradient(135deg,#3b82f6,#8b5cf6); padding:0.7rem 1.6rem; border-radius:40px; text-decoration:none; color:white; display:inline-block; }
+    i.fa, i.fas, i.far { margin-right: 6px; color: #60a5fa; }
   </style>
 </head>
 <body>
@@ -234,80 +236,73 @@
       </div>
     </div>
 
-    <!-- Technical Skills (UPDATED with new skills) -->
+    <!-- Technical Skills -->
     <div id="skills" class="section gsap-fade">
       <h2 class="section-title" data-speak="My technical skills include security operations, networking, ethical hacking, and KQL querying."><i class="fas fa-code-branch"></i> Technical Skills</h2>
       <div class="grid-2">
-        <!-- Security & SOC -->
         <div class="card" data-speak="Security and SOC skills: Microsoft Sentinel, log analysis, threat detection, incident response, vulnerability assessment.">
           <h3>Security & SOC</h3>
           <div class="tech-stack">
-            <span class="skill-badge" data-speak="Microsoft Sentinel for SIEM">Sentinel</span>
-            <span class="skill-badge" data-speak="Log analysis">Log Analysis</span>
-            <span class="skill-badge" data-speak="Threat detection">Threat Detection</span>
-            <span class="skill-badge" data-speak="Incident response">Incident Response</span>
-            <span class="skill-badge" data-speak="Vulnerability assessment">Vulnerability Assessment</span>
+            <span class="skill-badge">Sentinel</span><span class="skill-badge">Log Analysis</span><span class="skill-badge">Threat Detection</span><span class="skill-badge">Incident Response</span><span class="skill-badge">Vulnerability Assessment</span>
           </div>
         </div>
-        <!-- Networking -->
         <div class="card" data-speak="Networking skills: TCP/IP, DNS, Firewalls, VPN Concepts, Wireshark, Azure, Linux.">
           <h3>Networking</h3>
           <div class="tech-stack">
-            <span class="skill-badge" data-speak="TCP/IP protocol suite">TCP/IP</span>
-            <span class="skill-badge" data-speak="Domain Name System">DNS</span>
-            <span class="skill-badge" data-speak="Firewall configuration">Firewalls</span>
-            <span class="skill-badge" data-speak="Virtual Private Network concepts">VPN Concepts</span>
-            <span class="skill-badge" data-speak="Wireshark packet analyzer">Wireshark</span>
-            <span class="skill-badge" data-speak="Microsoft Azure cloud">Azure</span>
-            <span class="skill-badge" data-speak="Linux operating system">Linux</span>
+            <span class="skill-badge">TCP/IP</span><span class="skill-badge">DNS</span><span class="skill-badge">Firewalls</span><span class="skill-badge">VPN Concepts</span><span class="skill-badge">Wireshark</span><span class="skill-badge">Azure</span><span class="skill-badge">Linux</span>
           </div>
         </div>
-        <!-- Cybersecurity Fundamentals -->
         <div class="card" data-speak="Cybersecurity fundamentals: risk management, vulnerability assessment, data privacy, compliance, and security frameworks.">
           <h3>Cybersecurity Fundamentals</h3>
           <div class="tech-stack">
-            <span class="skill-badge" data-speak="Risk management">Risk Management</span>
-            <span class="skill-badge" data-speak="Vulnerability assessment">Vulnerability Assessment</span>
-            <span class="skill-badge" data-speak="Data privacy">Data Privacy</span>
-            <span class="skill-badge" data-speak="Compliance">Compliance</span>
-            <span class="skill-badge" data-speak="Security frameworks">Security Frameworks</span>
+            <span class="skill-badge">Risk Management</span><span class="skill-badge">Vulnerability Assessment</span><span class="skill-badge">Data Privacy</span><span class="skill-badge">Compliance</span><span class="skill-badge">Security Frameworks</span>
           </div>
         </div>
-        <!-- Ethical Hacking -->
         <div class="card" data-speak="Ethical hacking skills: reconnaissance, scanning, exploitation basics, reporting, and KQL querying.">
           <h3>Ethical Hacking</h3>
           <div class="tech-stack">
-            <span class="skill-badge" data-speak="Reconnaissance">Reconnaissance</span>
-            <span class="skill-badge" data-speak="Scanning">Scanning</span>
-            <span class="skill-badge" data-speak="Exploitation basics">Exploitation Basics</span>
-            <span class="skill-badge" data-speak="Reporting">Reporting</span>
-            <span class="skill-badge" data-speak="Kusto Query Language for Sentinel">KQL</span>
+            <span class="skill-badge">Reconnaissance</span><span class="skill-badge">Scanning</span><span class="skill-badge">Exploitation Basics</span><span class="skill-badge">Reporting</span><span class="skill-badge">KQL</span>
           </div>
         </div>
-        <!-- Languages & Query -->
         <div class="card" data-speak="Languages: KQL, basic scripting, Excel data analysis.">
           <h3>Languages & Query</h3>
           <div class="tech-stack">
-            <span class="skill-badge" data-speak="Kusto Query Language">KQL</span>
-            <span class="skill-badge" data-speak="Basic scripting">Scripting</span>
-            <span class="skill-badge" data-speak="Excel for data analysis">Excel</span>
+            <span class="skill-badge">KQL</span><span class="skill-badge">Scripting</span><span class="skill-badge">Excel</span>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Certifications & Education -->
+    <!-- Certifications & Education (UPDATED) -->
     <div id="certs" class="section gsap-fade">
-      <h2 class="section-title" data-speak="Certifications and education. I have completed Cisco Networking in Cybersecurity and am planning CompTIA Security Plus."><i class="fas fa-graduation-cap"></i> Certifications & Education</h2>
+      <h2 class="section-title" data-speak="Certifications and education. I have completed multiple Cisco Networking Academy certificates."><i class="fas fa-graduation-cap"></i> Certifications & Education</h2>
       <div class="grid-2">
-        <div class="card" data-speak="Certifications: Cisco Networking in Cybersecurity completed, CompTIA Security+ planned. Education: Mount Vernon Nazarene University, B.S. in Computer and Information Systems with Cybersecurity focus, graduating 2028.">
-          <h3>Certifications</h3>
-          <ul><li>Cisco Networking in Cybersecurity (Completed)</li><li>CompTIA Security+ (Planned)</li></ul>
-          <hr><h3>Education</h3><p><strong>Mount Vernon Nazarene University</strong><br>B.S. Computer & Information Systems (Cybersecurity)<br>Expected 2028</p>
+        <div class="card" data-speak="Certifications: I have completed Cisco Networking Basics, Cisco Introduction to Cybersecurity, and Cisco Ethical Hacker. I am also planning to take CompTIA Security Plus. Education: Mount Vernon Nazarene University, B.S. in Computer and Information Systems with Cybersecurity focus, graduating 2028.">
+          <h3><i class="fas fa-certificate"></i> Certifications</h3>
+          <ul class="list-custom">
+            <li><i class="fas fa-check-circle" style="color:#3b82f6;"></i> <strong>Cisco Networking Basics</strong> (Completed)</li>
+            <li><i class="fas fa-check-circle" style="color:#3b82f6;"></i> <strong>Cisco Introduction to Cybersecurity</strong> (Completed)</li>
+            <li><i class="fas fa-check-circle" style="color:#3b82f6;"></i> <strong>Cisco Ethical Hacker</strong> (Completed)</li>
+            <li><i class="fas fa-calendar-alt" style="color:#fbbf24;"></i> <strong>CompTIA Security+</strong> (Planned)</li>
+          </ul>
+          <hr style="border-color: rgba(59,130,246,0.2); margin: 1rem 0;">
+          <h3><i class="fas fa-university"></i> Education</h3>
+          <p><strong>Mount Vernon Nazarene University (MVNU)</strong><br>B.S. Computer & Information Systems (Cybersecurity Focus)<br>Expected 2028</p>
         </div>
         <div class="card" data-speak="Experience: Cybersecurity labs since 2024. Leadership: designed training program focused on communication and ethical decision-making.">
-          <h3>Experience & Leadership</h3>
-          <ul><li>Cybersecurity Labs & Academic Experience (2024-Present)</li><li>Leadership training program designer</li><li>Ethical decision-making focus</li></ul>
+          <h3><i class="fas fa-user-graduate"></i> Experience & Leadership</h3>
+          <p><strong>Cybersecurity Labs & Academic Experience (2024-Present)</strong></p>
+          <ul class="list-custom">
+            <li>Applied security operations concepts through hands-on labs and simulations</li>
+            <li>Conducted vulnerability analysis and practiced threat detection techniques</li>
+            <li>Developed understanding of incident response workflows and security monitoring</li>
+          </ul>
+          <p style="margin-top:1rem;"><strong>Leadership & Development</strong></p>
+          <ul class="list-custom">
+            <li>Designed leadership training program focused on communication and team effectiveness</li>
+            <li>Applied emotional intelligence and conflict management in case study analysis</li>
+            <li>Strong focus on ethical decision-making and responsible data handling</li>
+          </ul>
         </div>
       </div>
     </div>
