@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="Rishikesh Jagarlamudi - Cybersecurity Portfolio | SOC Analyst | Click anything for voice explanation">
+  <meta name="description" content="Rishikesh Jagarlamudi - Cybersecurity Analyst Portfolio | SOC Operations, Threat Detection, Incident Response">
   <meta name="theme-color" content="#0a0f1a">
-  <title>Rishikesh Jagarlamudi | SOC Analyst & Voice Portfolio</title>
+  <title>Rishikesh Jagarlamudi | SOC Analyst & Cybersecurity Professional</title>
   
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -32,7 +32,7 @@
     }
     .main-content { position: relative; z-index: 2; }
     
-    /* Hero section */
+    /* Hero Section */
     .hero-section {
       position: relative;
       height: 100vh;
@@ -70,7 +70,7 @@
       background-clip: text;
       color: transparent;
     }
-    .hero-content p { font-size: 1.2rem; color: #e2e8f0; margin-top: 1rem; }
+    .hero-content p { font-size: 1.2rem; color: #e2e8f0; margin-top: 1rem; font-weight: 500; }
     .hero-badge {
       margin-top: 2rem;
       display: inline-block;
@@ -79,6 +79,7 @@
       padding: 0.5rem 1rem;
       border-radius: 40px;
       font-size: 0.8rem;
+      border: 1px solid rgba(59,130,246,0.3);
     }
     
     .scroll-indicator {
@@ -177,11 +178,9 @@
     .skill-badge:hover { background: rgba(59, 130, 246, 0.4); }
     .list-custom { margin-top: 0.9rem; margin-left: 1.2rem; }
     .list-custom li { margin-bottom: 0.5rem; }
-    .badge-contact { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin: 1.5rem 0; }
-    .contact-icon { background: rgba(15, 23, 42, 0.7); padding: 0.5rem 1.2rem; border-radius: 60px; backdrop-filter: blur(4px); }
     footer { text-align: center; padding: 2rem; color: #6f85a0; }
     @media (max-width: 720px) { .hero-content h1 { font-size: 2.2rem; } .container { padding: 0 1.2rem; } }
-    .btn-primary { background: linear-gradient(135deg,#3b82f6,#8b5cf6); padding:0.7rem 1.6rem; border-radius:40px; text-decoration:none; color:white; display:inline-block; }
+    .btn-primary { background: linear-gradient(135deg,#3b82f6,#8b5cf6); padding:0.7rem 1.6rem; border-radius:40px; text-decoration:none; color:white; display:inline-block; font-weight: 600; }
     i.fa, i.fas, i.far { margin-right: 6px; color: #60a5fa; }
   </style>
 </head>
@@ -197,8 +196,8 @@
   <section class="hero-section" id="hero">
     <div class="hero-content">
       <h1>RISHIKESH JAGARLAMUDI</h1>
-      <p>Cybersecurity Student | SOC Analyst | Click anything for voice explanation</p>
-      <div class="hero-badge"><i class="fas fa-ear-listen"></i> Tap any card or skill → voice speaks</div>
+      <p>Cybersecurity Analyst | SOC Operations | Threat Detection & Incident Response</p>
+      <div class="hero-badge"><i class="fas fa-shield-haltered"></i> Full-Time Opportunities | Tap any card to listen</div>
     </div>
     <div class="scroll-indicator" id="scrollIndicator">
       <div class="mouse"></div>
@@ -207,91 +206,100 @@
   </section>
 
   <div class="container">
-    <!-- Objective -->
+    <!-- Professional Objective -->
     <div class="section gsap-fade">
-      <div class="card" data-speak="My objective: I am a cybersecurity student seeking an internship in SOC, threat detection, and incident response. I have hands-on experience with Microsoft Sentinel and network traffic monitoring.">
-        <p><i class="fas fa-bullseye"></i> <strong>Objective:</strong> Cybersecurity-focused student seeking a cybersecurity internship to apply skills in security operations (SOC), threat detection, vulnerability assessment, and incident response. Hands-on experience with Microsoft Sentinel, log analysis, and network traffic monitoring.</p>
+      <div class="card" data-speak="Professional Summary: I am a security operations professional with hands-on experience in Microsoft Sentinel, KQL, and network traffic analysis. I am seeking a full-time role to apply my expertise in threat detection, vulnerability assessment, and incident response to proactively defend enterprise environments.">
+        <p><i class="fas fa-bullseye"></i> <strong>Professional Summary:</strong> Security Operations professional with hands-on experience in Microsoft Sentinel, log analysis, and network traffic monitoring. Seeking a full-time role in SOC operations to leverage skills in threat detection, vulnerability assessment, and incident response to proactively defend enterprise environments.</p>
       </div>
     </div>
 
     <!-- Projects -->
     <div id="projects" class="section gsap-fade">
-      <h2 class="section-title" data-speak="Projects section. I have three main cybersecurity projects."><i class="fas fa-project-diagram"></i> SOC Labs & Projects</h2>
+      <h2 class="section-title" data-speak="Featured Projects: I have engineered three comprehensive cybersecurity labs."><i class="fas fa-project-diagram"></i> Security Operations & Projects</h2>
       <div class="grid-2">
-        <div class="card" data-speak="Enterprise SOC Lab using Microsoft Sentinel. I deployed a cloud SIEM, detected brute force attacks, wrote KQL queries, and blocked malicious IPs with Azure NSG rules.">
-          <h3><i class="fas fa-cloud-upload-alt"></i> Enterprise SOC Lab: Threat Detection & IR</h3>
-          <div class="tech-stack"><span class="skill-badge">Sentinel</span><span class="skill-badge">Azure</span><span class="skill-badge">KQL</span></div>
-          <ul class="list-custom"><li>Deployed cloud SIEM with Azure Sentinel</li><li>Detected brute force (Event ID 4625)</li><li>Wrote KQL queries for suspicious IPs</li><li>Blocked malicious IPs using Azure NSG</li></ul>
+        <div class="card" data-speak="Enterprise SOC Lab: I deployed a cloud-based SIEM using Microsoft Sentinel, ingested Windows Security logs to detect brute force attacks, wrote KQL queries, and implemented automated response actions to block malicious IPs.">
+          <h3><i class="fas fa-cloud-upload-alt"></i> Enterprise SOC Lab: Threat Detection</h3>
+          <div class="tech-stack"><span class="skill-badge">Microsoft Sentinel</span><span class="skill-badge">Azure</span><span class="skill-badge">KQL</span></div>
+          <ul class="list-custom">
+            <li>Deployed cloud SIEM using Microsoft Sentinel and Azure VMs</li>
+            <li>Detected brute force attacks via Windows Event ID 4625</li>
+            <li>Engineered KQL queries to hunt suspicious IP activity</li>
+            <li>Implemented response by blocking malicious IPs via Azure NSG</li>
+          </ul>
         </div>
-        <div class="card" data-speak="Network Traffic Analysis lab with Wireshark. I captured packets, detected failed login attempts, and recommended mitigation strategies.">
-          <h3><i class="fas fa-chart-line"></i> Network Traffic Analysis</h3>
+        <div class="card" data-speak="Network Traffic Analysis: I utilized Wireshark to capture and analyze packet-level data, identifying abnormal network behavior and recommending mitigation strategies.">
+          <h3><i class="fas fa-chart-line"></i> Network Traffic Analysis & Threat Detection</h3>
           <div class="tech-stack"><span class="skill-badge">Wireshark</span><span class="skill-badge">TCP/IP</span><span class="skill-badge">Linux</span></div>
-          <ul class="list-custom"><li>Captured packet-level anomalies</li><li>Detected repeated failed logins</li><li>Documented findings & mitigation</li></ul>
+          <ul class="list-custom">
+            <li>Captured and analyzed packet-level data for anomalies</li>
+            <li>Detected repeated failed logins and suspicious traffic</li>
+            <li>Interpreted protocols to understand communication flow</li>
+            <li>Documented findings and recommended mitigation strategies</li>
+          </ul>
         </div>
-        <div class="card" data-speak="Cybersecurity Risk and Governance Analysis. I analyzed frameworks, evaluated AI ethics, and proposed security improvements.">
-          <h3><i class="fas fa-gavel"></i> Risk & Governance Analysis</h3>
-          <div class="tech-stack"><span class="skill-badge">Risk Mgmt</span><span class="skill-badge">Data Privacy</span></div>
-          <ul class="list-custom"><li>Analyzed frameworks & data privacy risks</li><li>Evaluated AI ethical implications</li><li>Proposed security posture improvements</li></ul>
+        <div class="card" data-speak="Cybersecurity Risk and Governance: I analyzed organizational frameworks, evaluated AI ethics, and proposed strategies to improve overall security posture.">
+          <h3><i class="fas fa-gavel"></i> Cybersecurity Risk & Governance</h3>
+          <div class="tech-stack"><span class="skill-badge">Risk Management</span><span class="skill-badge">Data Privacy</span></div>
+          <ul class="list-custom">
+            <li>Analyzed frameworks and data privacy risks</li>
+            <li>Evaluated ethical implications of AI systems</li>
+            <li>Proposed strategies to improve security posture</li>
+          </ul>
         </div>
       </div>
     </div>
 
     <!-- Technical Skills -->
     <div id="skills" class="section gsap-fade">
-      <h2 class="section-title" data-speak="My technical skills include security operations, networking, ethical hacking, and KQL querying."><i class="fas fa-code-branch"></i> Technical Skills</h2>
+      <h2 class="section-title" data-speak="Technical Arsenal: My expertise spans security operations, networking, ethical hacking, and data querying."><i class="fas fa-code-branch"></i> Technical Arsenal</h2>
       <div class="grid-2">
-        <div class="card" data-speak="Security and SOC skills: Microsoft Sentinel, log analysis, threat detection, incident response, vulnerability assessment.">
+        <div class="card" data-speak="Security and SOC skills: SIEM, Microsoft Sentinel, log analysis, threat detection, incident response, and vulnerability assessment.">
           <h3>Security & SOC</h3>
           <div class="tech-stack">
-            <span class="skill-badge">Sentinel</span><span class="skill-badge">Log Analysis</span><span class="skill-badge">Threat Detection</span><span class="skill-badge">Incident Response</span><span class="skill-badge">Vulnerability Assessment</span>
+            <span class="skill-badge">SIEM (Sentinel)</span><span class="skill-badge">Log Analysis</span><span class="skill-badge">Threat Detection</span><span class="skill-badge">Incident Response</span><span class="skill-badge">Vulnerability Assessment</span>
           </div>
         </div>
-        <div class="card" data-speak="Networking skills: TCP/IP, DNS, Firewalls, VPN Concepts, Wireshark, Azure, Linux.">
-          <h3>Networking</h3>
+        <div class="card" data-speak="Networking skills: TCP/IP, DNS, firewalls, VPN concepts, Wireshark, Azure, Linux, and Windows.">
+          <h3>Networking & Infrastructure</h3>
           <div class="tech-stack">
-            <span class="skill-badge">TCP/IP</span><span class="skill-badge">DNS</span><span class="skill-badge">Firewalls</span><span class="skill-badge">VPN Concepts</span><span class="skill-badge">Wireshark</span><span class="skill-badge">Azure</span><span class="skill-badge">Linux</span>
+            <span class="skill-badge">TCP/IP</span><span class="skill-badge">DNS</span><span class="skill-badge">Firewalls</span><span class="skill-badge">VPN Concepts</span><span class="skill-badge">Wireshark</span><span class="skill-badge">Azure</span><span class="skill-badge">Linux / Windows</span>
           </div>
         </div>
-        <div class="card" data-speak="Cybersecurity fundamentals: risk management, vulnerability assessment, data privacy, compliance, and security frameworks.">
+        <div class="card" data-speak="Cybersecurity fundamentals: risk management, risk prioritization, data privacy, compliance, and security frameworks.">
           <h3>Cybersecurity Fundamentals</h3>
           <div class="tech-stack">
-            <span class="skill-badge">Risk Management</span><span class="skill-badge">Vulnerability Assessment</span><span class="skill-badge">Data Privacy</span><span class="skill-badge">Compliance</span><span class="skill-badge">Security Frameworks</span>
+            <span class="skill-badge">Risk Management</span><span class="skill-badge">Risk Prioritization</span><span class="skill-badge">Data Privacy</span><span class="skill-badge">Compliance</span><span class="skill-badge">Security Frameworks</span>
           </div>
         </div>
         <div class="card" data-speak="Ethical hacking skills: reconnaissance, scanning, exploitation basics, reporting, and KQL querying.">
-          <h3>Ethical Hacking</h3>
+          <h3>Ethical Hacking & Query</h3>
           <div class="tech-stack">
-            <span class="skill-badge">Reconnaissance</span><span class="skill-badge">Scanning</span><span class="skill-badge">Exploitation Basics</span><span class="skill-badge">Reporting</span><span class="skill-badge">KQL</span>
-          </div>
-        </div>
-        <div class="card" data-speak="Languages: KQL, basic scripting, Excel data analysis.">
-          <h3>Languages & Query</h3>
-          <div class="tech-stack">
-            <span class="skill-badge">KQL</span><span class="skill-badge">Scripting</span><span class="skill-badge">Excel</span>
+            <span class="skill-badge">Reconnaissance</span><span class="skill-badge">Scanning</span><span class="skill-badge">Exploitation Basics</span><span class="skill-badge">Reporting</span><span class="skill-badge">KQL (Kusto)</span>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Certifications & Education (UPDATED) -->
+    <!-- Certifications & Education -->
     <div id="certs" class="section gsap-fade">
-      <h2 class="section-title" data-speak="Certifications and education. I have completed multiple Cisco Networking Academy certificates."><i class="fas fa-graduation-cap"></i> Certifications & Education</h2>
+      <h2 class="section-title" data-speak="Certifications and Education: I hold multiple Cisco Networking Academy credentials and am currently pursuing CompTIA Security Plus."><i class="fas fa-graduation-cap"></i> Certifications & Education</h2>
       <div class="grid-2">
-        <div class="card" data-speak="Certifications: I have completed Cisco Networking Basics, Cisco Introduction to Cybersecurity, and Cisco Ethical Hacker. I am also planning to take CompTIA Security Plus. Education: Mount Vernon Nazarene University, B.S. in Computer and Information Systems with Cybersecurity focus, graduating 2028.">
-          <h3><i class="fas fa-certificate"></i> Certifications</h3>
+        <div class="card" data-speak="Certifications: I have completed Cisco Networking Basics, Cisco Introduction to Cybersecurity, and Cisco Ethical Hacker. I am planning to take CompTIA Security Plus. Education: I am pursuing a B.S. in Computer and Information Systems with a Cybersecurity focus at Mount Vernon Nazarene University, expected graduation 2028.">
+          <h3><i class="fas fa-certificate"></i> Industry Certifications</h3>
           <ul class="list-custom">
             <li><i class="fas fa-check-circle" style="color:#3b82f6;"></i> <strong>Cisco Networking Basics</strong> (Completed)</li>
             <li><i class="fas fa-check-circle" style="color:#3b82f6;"></i> <strong>Cisco Introduction to Cybersecurity</strong> (Completed)</li>
             <li><i class="fas fa-check-circle" style="color:#3b82f6;"></i> <strong>Cisco Ethical Hacker</strong> (Completed)</li>
-            <li><i class="fas fa-calendar-alt" style="color:#fbbf24;"></i> <strong>CompTIA Security+</strong> (Planned)</li>
+            <li><i class="fas fa-calendar-alt" style="color:#fbbf24;"></i> <strong>CompTIA Security+</strong> (In Progress / Planned)</li>
           </ul>
           <hr style="border-color: rgba(59,130,246,0.2); margin: 1rem 0;">
           <h3><i class="fas fa-university"></i> Education</h3>
-          <p><strong>Mount Vernon Nazarene University (MVNU)</strong><br>B.S. Computer & Information Systems (Cybersecurity Focus)<br>Expected 2028</p>
+          <p><strong>Mount Vernon Nazarene University (MVNU)</strong><br>B.S. Computer & Information Systems (Cybersecurity Focus)<br>Expected Graduation: 2028</p>
+          <p style="margin-top: 0.5rem; font-size: 0.85rem; color: #a0aec0;">Relevant Coursework: Network Security, Ethical Hacking, Risk Management, Cloud Security, Data Privacy.</p>
         </div>
-        <div class="card" data-speak="Experience: Cybersecurity labs since 2024. Leadership: designed training program focused on communication and ethical decision-making.">
+        <div class="card" data-speak="Professional Experience and Leadership: I have applied security operations concepts through hands-on labs since 2024. Additionally, I designed a leadership training program focusing on communication, emotional intelligence, and ethical decision-making.">
           <h3><i class="fas fa-user-graduate"></i> Experience & Leadership</h3>
-          <p><strong>Cybersecurity Labs & Academic Experience (2024-Present)</strong></p>
+          <p><strong>Security Operations & Academic Labs (2024 – Present)</strong></p>
           <ul class="list-custom">
             <li>Applied security operations concepts through hands-on labs and simulations</li>
             <li>Conducted vulnerability analysis and practiced threat detection techniques</li>
@@ -299,7 +307,7 @@
           </ul>
           <p style="margin-top:1rem;"><strong>Leadership & Development</strong></p>
           <ul class="list-custom">
-            <li>Designed leadership training program focused on communication and team effectiveness</li>
+            <li>Designed a leadership training program focused on communication and team effectiveness</li>
             <li>Applied emotional intelligence and conflict management in case study analysis</li>
             <li>Strong focus on ethical decision-making and responsible data handling</li>
           </ul>
@@ -309,16 +317,16 @@
 
     <!-- Contact -->
     <div id="contact" class="section gsap-fade" style="border-bottom:none">
-      <h2 class="section-title" data-speak="Contact me via email or LinkedIn. I am actively seeking SOC internship opportunities."><i class="fas fa-cloud-sun"></i> Let's Connect</h2>
+      <h2 class="section-title" data-speak="Contact Information: I am actively seeking full-time Cybersecurity Analyst and SOC roles. Please reach out via email or LinkedIn."><i class="fas fa-cloud-sun"></i> Let's Connect</h2>
       <div class="card" style="text-align:center">
         <p><i class="fas fa-envelope"></i> rishijagarlamudi95@gmail.com | <i class="fas fa-phone-alt"></i> +1 469-877-2209</p>
         <p><i class="fab fa-linkedin"></i> linkedin.com/in/rishikesh-jagarlamudi | Frisco, Texas</p>
         <div style="margin-top:1rem"><a href="mailto:rishijagarlamudi95@gmail.com" class="btn-primary">Email Me</a></div>
-        <p style="margin-top:1rem">Actively seeking SOC Internship opportunities.</p>
+        <p style="margin-top:1rem; font-weight: 500; color: #60a5fa;">Open to full-time Cybersecurity Analyst and SOC opportunities.</p>
       </div>
     </div>
   </div>
-  <footer><p>© 2026 Rishikesh Jagarlamudi — <strong>soc-cloud.cloud</strong> | Voice‑Enabled Cybersecurity Portfolio</p></footer>
+  <footer><p>© 2026 Rishikesh Jagarlamudi — <strong>soc-cloud.cloud</strong> | Professional Cybersecurity Portfolio</p></footer>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -366,7 +374,7 @@
     if (window.speechSynthesis) {
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(text);
-      utterance.rate = 0.9;
+      utterance.rate = 0.95; // Slightly faster for a professional tone
       utterance.pitch = 1.0;
       utterance.lang = 'en-US';
       window.speechSynthesis.speak(utterance);
@@ -377,7 +385,7 @@
   
   testBtn.addEventListener('click', (e) => {
     e.stopPropagation();
-    speakText('Hello, this is Rishikesh Jagarlamudi\'s portfolio. Click any project or skill to hear an explanation.');
+    speakText('Hello, this is Rishikesh Jagarlamudi\'s professional cybersecurity portfolio. Click any section to hear details about my full-time experience and skills.');
   });
   
   toggleBtn.addEventListener('click', (e) => {
@@ -411,7 +419,7 @@
   
   setTimeout(() => {
     if (voiceEnabled) {
-      speakText('Welcome to my cybersecurity portfolio. Click any card or skill to hear details.');
+      speakText('Welcome to my cybersecurity portfolio. Click any section to hear my professional experience and skills.');
     }
   }, 1000);
 </script>
